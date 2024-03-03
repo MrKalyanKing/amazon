@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}"/>
+</head>
+<body>
+    <div class="logo">
+        <div class="logo1" style="background-image: url('{ % static '/images/amazon_logo.png'% }')">
+           
+        </div>
+
+        </div>
+    </div>
+    <div class="main box">
+        <div class="content">
+
+           
+            <div class="content1">
+
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <h2>Sign Up</h2>
+            </div>
+            <div class="login-form">
+            <div class="error">
+                {% if  error_message %}
+                <p class="error">{{ username_errors }}</p>
+                {% endif %}
+            </div>
+                <label for="username">Username</label>
+                {% if  error_message %}
+                <p class="error">{{ username_errors }}</p>
+                {% endif %}
+                <input class="input1"type="text" placeholder="Username" name="username" id="username"pattern="^[a-zA-Z0-9_-]{4,20}$" title="Username must be 4 to 20 characters and can contain only letters, numbers, hyphens, and underscores." required>
+                {% if error_message%}
+                <p class="error">{{password_errors}}</p>
+                {% endif %}
+                <label for="password1">Password</label>
+                    <input  class="input1"type="password" placeholder="Password" id="password1" name="password1"pattern="^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*()-_=+,.?\:{}|<>]{8,}$" title="Password must be at least 8 characters long and contain at least one letter, one digit, and one special character." required>
+                    <label  class="input1"for="password1">Confrim Password</label>
+                    <input class="input1" type="password" placeholder="Confrom Password" id="password2" name="password2"pattern="^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*()-_=+,.?\:{}|<>]{8,}$" title="Password must be at least 8 characters long and contain at least one letter, one digit, and one special character." required>
+                    {% if error_message%}
+                    <p class="error">{{error_message}}</p>
+                    {% endif %}
+                    <label for="email">Email</label>
+                   
+                    <input class="input1" type="email" placeholder="Email or Phone" name="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" title="Enter a valid email address." required>
+
+                </div>
+                <div class="button">
+                    <div class="button1">
+                       <a href="{% url 'login'%}" ><button type="submit">Sign In</button></a>
+                        
+                    </div>
+                </div>
+                
+                 <div class="anchor">
+                    <a href="{% url 'login'%}">I have have an account</a>
+                 </div>
+            </form>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+<style>
+    .logo {
+        height: 50px;
+    }
+
+    .logo1 {
+        background-image: url('assets/images/Amazon logo.jpg');
+        height: 70px;
+        width: 150px;
+        background-size: cover;
+        margin: auto;
+    }
+
+    .main box {
+        height: 360px;
+        width: 279px;
+        border-radius: 3px;
+    }
+
+    .content {
+        height: 360px;
+        width: 325px;
+        background-color: whitesmoke;
+        margin: auto;
+        border-radius: 3px;
+    }
+
+    .content1 h2 {
+        margin-left: 120px;
+        padding: 15px 0px 0px;
+    }
+
+    .login-form {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .input1 {
+        height: 31px;
+        width: 296px;
+    }
+
+   /* .button {
+        height: 29px;
+        width: 300px;
+        margin-left: 4px;
+        margin-top: 20px;
+        background-color: #99f2d9;
+    }*/
+    .button a{
+        text-decoration:none;
+        color:black;
+        justify-content:center;
+        text-align:center;
+        margin-left: 15px;
+        
+    }
+
+    .button1 {
+        height: 29px;
+        width: 300px;
+        margin-left: 13px;
+        margin-top: 10px;
+        background-color: #febd68;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+    }
+   
+
+    .new-ac p {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .new-ac button {
+        height: 29px;
+        width: 300px;
+        margin-left: 15px;
+        background-color: #febd68;
+    }
+   
+    label{
+    display: block;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 5px;
+    }
+   .anchor{
+    margin-left: 15px ;
+   }
+   .anchor a {
+    text-decoration: none;
+    color: rgb(24, 9, 231);
+   }
+   .anchor:hover a {
+    color: #febd68;
+   }
+   .error  {
+        color:red;
+        margin-bottom: 3px;
+     }
+     .label{
+        margin-bottom: 3px;
+     }
+
+</style>
+</html>

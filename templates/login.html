@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}"/>
+</head>
+<body>
+    <div>
+        <div class="logo">
+            <div class="logo1">
+            </div>
+        </div>
+        <div class="main box">
+            <div class="content">
+                
+                <div class="content1">
+                    
+                        <h2>Sign In</h2>
+                
+                </div>
+                
+                <form action="" method="post">
+                    {% csrf_token%}
+                <div class="login-form">
+                    <p>Username OR Mobile number</p>
+                    {% if  error_message %}
+                <p class="error">{{ error_message }}</p>
+                {% endif %}
+                    <input class="input1" type="text" placeholder="username or mobile number" name="username" id="username" />
+                    <div class="password1">
+                        <p>Password</p>
+                        <input class="input1" type="text" placeholder="Password" name="pass" id="password" />
+                        
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="button1">
+                        <p> <a href="#"><button type="submit">Sign In</button></p>
+                    </div>
+                    <div class="button1">
+                       
+                        <p> <a href= "{% url 'register' %}" >Sign Up</a></p>
+                        <p>Create An account</p>
+                    </div>
+                    <div class="button1">
+                        <p><a href="{% url 'home' %}">Home</a></p>
+
+                    </div>
+                
+
+                </div>
+
+
+            </div>
+             </form>
+    </div>
+</body>
+<style>
+ 
+    .logo {
+        height: 50px;   
+    }
+    .logo1 {
+        background-image: url('assets/images/Amazon logo.jpg');
+        height: 70px;
+        width:150px;
+        background-size: cover;
+        margin:auto;
+    }
+    .main box{
+        height:380px;
+        width:279px;
+        border-radius:3px;
+        background-color:aqua;
+    }
+    .content {
+        height: 380px;
+        width: 325px;
+        background-color:whitesmoke;
+        margin: auto;
+        border-radius: 3px;
+    }
+    .content1 h2 {
+        margin-left:120px;
+        padding:15px 0px 0px;
+    }
+    .login-form  {
+        margin-left:15px;
+        margin-top:10px;
+    }
+    .input1{
+        height:31px;
+        width:296px;
+       
+    }
+    .button{
+        height:29px;
+        width:300px;
+        
+    }
+    .button1{
+        height:29px;
+        width:300px;
+        margin-left:15px;
+        margin-top:20px;
+        background-color:#febd68;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .button1 p {
+        margin-right:10px;
+        color:#808080;
+    }
+    .button1 a {
+        text-decoration:none;
+        color:black;
+    }
+    .new-ac a {
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+        text-align: center;
+    }
+   /*.new-ac {
+        height:29px;
+        width:300px;
+        margin-left:15px;
+     */
+     .error{
+        color:red;
+     }
+</style>
+</html>

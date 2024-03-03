@@ -1,0 +1,359 @@
+ {% load static  %}
+* {
+    margin: 0;
+ 
+    font-family: Arial;
+  
+}
+.navbar{
+    height:60px;
+    background-color:black;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.navlogo {
+    height: 50px;
+    width: 100px;
+    
+}
+.logo {
+    background-image: url("{% static '/images/Amazon_logo.png '%}");
+
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    
+}
+.border{
+    border:2px solid  transparent;
+    
+}
+.border:hover{
+    
+    border: 1.5px solid white;
+   
+}
+
+.add-frist {
+    color: #cccccc;
+    font-size: 1rem;
+    display:flex;
+    margin-left:15px;
+   
+}
+.add-sec {
+    color:#FFFFFF;
+    font-size:14px;
+    
+}
+.add-icon {
+    display:flex;
+}
+.login-page h4 {
+    background-color: aqua;
+}
+.nav-search{
+    display:flex;
+    justify-content:space-evenly;
+    background-color:blue;
+    width:620px;
+    height:40px;
+    border-radius:3px;
+}
+.select-search{
+    color:#0F1111;
+    width:100px;
+    border-start-start-radius:3px;
+    border:none;
+    
+}
+.input-select{
+    width:500px;
+    border:none;
+    font-size:15px;
+}
+.add-search{
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#febd68;
+   
+    border-bottom-right-radius:4px;
+    border-top-right-radius:4px;
+    color:black;
+}
+.selecting-login {
+    display: flex;
+    color:white;
+    background-color:black;
+    border:none;
+}
+.login-page{
+    display:flex;
+}
+.login-page a {
+    text-decoration:none;
+    color:white;
+}
+.add-iconcart{
+    font-size:30px;
+}
+/* code for pannel*/
+.pannel{
+    height:40px;
+    background-color:#808080;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    font-family:Arial;
+    background-repeat:no-repeat;
+    
+  
+
+}
+.menu-icon{
+    font-size:15px;
+    margin-bottom:0.25rem;
+    display:flex;
+    margin-right:10px;
+}
+.setting{
+    font-size:20px;
+}  
+
+.pannel-options{
+    display:flex;
+    width:90%;
+    margin-right:70px;
+}
+.mini {
+    margin-right:5px;
+    
+}
+.say {
+    margin-right: 20px;
+}
+.best {
+    margin-right: 20px;
+}
+.deals {
+    margin-right: 20px;
+}
+.mobile {
+    margin-right: 20px;
+}
+.Customer {
+    margin-right: 20px;
+}
+.prim {
+    margin-right: 20px;
+}
+.electronic {
+    margin-right: 20px;
+}
+.pic {
+    background-image: url("{% static '/images/download link.jpg'%}");
+    height: 40Px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+.hero {
+    
+    height: 400px;
+    width: 1500px;
+    background-repeat: no-repeat;
+}
+.image-slider{
+    height:400px;
+    width:1300px;
+   
+    animation: changeimage 60s ease infinite normal;
+    transition-delay: 10s;
+    background-size:cover;
+    background-repeat:no-repeat;
+   
+}
+@keyframes changeimage{
+    0% {
+         
+    }
+    14% {
+        background-image: url("/images/slider2.jpg");
+        ;
+    }
+    28% {
+        background-image: url("/images/slider3.jpg");
+    }
+    42% {
+        background-image: url("/images/slider4.jpg");
+    }
+    56% {
+        background-image: url("assets/images/slider5.jpg");
+    }
+    70% {
+        background-image: url("assets/images/slider6.jpg");
+    }
+    84% {
+        background-image: url("assets/images/slider7.jpg");
+    }
+    100% {
+        background-image: url("assets/images/hero_image.jpg");
+    }
+
+}
+.box{
+    width:23%;
+    height:350px;
+    display:flex;
+    background-color:white;
+    
+    margin-top:25px;
+    padding:20px 0px 15px;
+    border:none;
+    background-size:cover;
+
+}
+.shop{
+    display:flex;
+    flex-wrap:wrap;
+    
+    justify-content:space-evenly;
+    background-color:#808080;
+    border:none;
+   
+}
+
+.box1 {
+    /*background-image: url("{% static 'index2/images/smart.jpg' %}");*/
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.box1-image p{
+    position:relative;
+    margin-left:-290px;
+    margin-top:300px;
+}
+.box1-image a {
+    text-decoration: none;
+}
+.box2 {
+    background-image: url('{% static "/images/laptop.jpg" %}');
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.box2-image p {
+    position: relative;
+    margin-left: -140px;
+    margin-top: 300px;
+}
+.box2-image a {
+    text-decoration: none;
+}
+.box3 {
+    background-image: url("assets/images/iphone.jpg");
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.box3-image p {
+    position: relative;
+    margin-left: -120px;
+    margin-top: 300px;
+    height:100px;
+}
+.box3-image a {
+    text-decoration: none;
+}
+.box4-outer {
+    width: 23%;
+    height: 390px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top:20px;
+.inner{
+    width: 45%;
+    height: 45%;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px
+}
+
+.m1 {
+    background-image: url("assets/images/box1_image.jpg");
+    background-size: cover;
+}
+
+.m2 {
+    background-image: url("assets/images/box8_image.jpg");
+    background-size: cover;
+}
+
+
+.m3 {
+    background-image: url("assets/images/box5_image.jpg");
+    background-size: cover;
+}
+.m4 {
+    background-image: url("assets/images/box6_image.jpg");
+    background-size: cover;
+}
+
+.
+.box4-outer p {
+    position: relative;
+    margin-left: -290px;
+    margin-top: 300px;
+}
+.box4-outer a {
+    text-decoration:none;
+}
+/*shoe section*/
+.shoe{
+    display:flex;
+    flex-wrap:wrap;
+}
+.sec {
+    width: 23%;
+    height: 350px;
+    display: flex;
+    background-color: white;
+    margin-top: 25px;
+    padding: 20px 0px 15px;
+    border: none;
+    background-size: cover;
+}
+/* Style the box container */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.long-box {
+    width: 200px; /* Adjust the width as desired */
+    height: 400px; /* Adjust the height as desired */
+    background-color: #f0f0f0; /* Change the background color */
+    border: 2px solid #ccc; /* Add a border */
+    margin: 50px auto; /* Center the box on the page */
+}

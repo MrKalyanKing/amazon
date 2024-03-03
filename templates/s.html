@@ -1,0 +1,821 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="{% static ''%}"/>
+    
+    <script src="{% static ''%}" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="nav-logo border ">
+                <div class="logo" style="background-image: url('{% static '/images/Amazon_logo.png'%}')"></div>
+            </div>
+              <div class="nav-add border" ">
+                <p class="add-frist">Hello</p>
+                <div class="add-icon  ">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec ">Select your adresss</p>
+                </div>
+              </div>
+                      <div class="nav-search ">
+                           <select class="select-search border">
+                               <option>All categories</option>
+                            </select>
+                             <input type="text" placeholder="Search amazon.in" class="input-select border"/>
+                            <div class="add-search border">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                             </div>
+
+                       </div>
+                                
+                               <div class="nav-sign border">
+                                  <span>Hello,sign in</span>
+                                   <div class="login-page ">
+                                       <h4><a href=" {%  url   'login' %}">Accounts & Lists</a></h4>
+                                       <select class="selecting-login">
+                                         <option><a href="{% url 'login' %}"></option>
+                                       </select>
+                                   </div>
+
+                               </div>
+                                     <div class="returns border ">
+                                         <span>Returns</span>
+                                         <div class="orders">
+                                             <h4>& Orders</h4>
+                                         </div>
+                                     </div>      
+                                         <div class="add-iconcart border">
+
+                                              <i class="fa-solid fa-cart-arrow-down"></i>
+                                         </div>
+
+
+        </div>
+        <!--code for pannel-->
+         <div class="pannel ">
+             <div class="menu-icon border">
+                 <i class="fa-solid fa-bars"></i>
+                   All
+             </div>
+             <div class="pannel-options">
+
+                 <div class="mini border">Amazon miniTV</div>
+                 <div class="say border">Sell</div>
+                 <div class="best border">Best sellers</div>
+                 <div class="deals border">Today deals</div>
+                 <div class="mobile border">Mobiles</div>
+                 <div class="Customer  border">Customer service</div>
+                 <div class="prim border">Prime</div>
+                 <div class="electronic border">Electonic</div>
+                 
+
+             </div>
+
+              <div class=" pic border ">
+
+
+              </div>
+
+
+         </div>
+
+
+
+
+
+    </header>
+    
+
+</body>
+  <!--hero section-->
+<body>
+   <!----<div class="image-slider" >
+        <img src="{% static '/images/sliderk1.jpg'%}" width="1300" height="450">
+       </div>
+        
+    </div>-->
+    <div class="slider">
+        <div class="slide" active>
+            <img src="{% static '/images/slider4.jpg' %}" alt="" width="1300" height="400px">
+           
+       </div>
+            <div class="slide">
+                <img src="{% static '/images/slider3.jpg' %}" alt="">
+               
+            </div>
+            <div class="slide">
+                <img src="{% static '/images/slider7.jpg' %}" alt="" >
+                
+            </div>
+            <div class="slide">
+                <img src="{% static '/images/slider1.jpg' %}" alt="">
+               
+            </div>
+            <div class="slide">
+                <img src="{% static '/images/slider2.jpg' %}" alt="" width="1300" height="400px">
+                
+            </div>
+        <div class="navigation">
+            <div class="btn" active></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+
+        </div>
+    </div>
+    
+      
+
+
+</body>
+      <!-- shop section-->
+<body>
+    <div class="shop">
+
+
+        <div class="box1 box" style="background-image: url('{% static '/images/smart.jpg' %}')">
+
+            <h2>Bluetooth calling Smartwatches</h2>
+            <div class="box1-image ">
+                <p><a href="https://www.amazon.in/s?hidden-keywords=B0B3RRWSF6+%7C+B0B5B6PQCT+%7C+B0BF57RN3K+%7C+B0B6BLTGTT+%7C+B0B854R7NS+%7C+B0B5LVS732+%7C+B0BJ72WZQ7+%7C+B09NVPSCQT+%7C+B0B53QFZPY+%7C+B0B3RSDSZ3+%7C+B0B5DDJNH4+%7C+B0BP18W8TM+%7C+B0BF563HB4+%7C+B09V12K8NT+%7C+B09YV4MW2T+%7C+B0B5LW5DFQ+%7C+B0B6BPX5S9+%7C+B09YV42QHZ+%7C+B0B5LWP12T+%7C+B0BF4YBLPX+%7C+B0BRJF98R9+%7C+B0B53NXFFR+%7C+B09RK7XWQS+%7C+B0BBVKRP7B+%7C+B0BMM4MBT2&_encoding=UTF8&content-id=amzn1.sym.0e847605-5c53-4a3e-9dee-daed4c4621a9&pd_rd_r=6c3746b9-551f-4ab2-b9e4-f299357e187b&pd_rd_w=W1L9g&pd_rd_wg=VrsFT&pf_rd_p=0e847605-5c53-4a3e-9dee-daed4c4621a9&pf_rd_r=J5RJ2MBR7RZXHY3E2MF6&ref=pd_gw_unk">shop</a></p>
+            </div>
+
+        </div>
+
+
+        <div class="box2 box"  style="background-image: url('{% static '/images/laptop.jpg'%}')">
+            <h2>Laptops Deals</h2>
+            <div class="box2-image ">
+                <p><a href="#">shop</a></p>
+
+            </div>
+        </div>
+
+        <div class="box3 box "  style="background-image: url('{% static '/images/iphone.jpg'%}')">
+            <h2>Electronics</h2>
+            <div class="box3-image ">
+                <p><a href="https://www.amazon.in/Apple-iPhone-256GB-Deep-Purple/dp/B0BDK2FB2T/?_encoding=UTF8&pd_rd_w=KzOlH&content-id=amzn1.sym.aff93425-4e25-4d86-babd-0fa9faf7ca5d%3Aamzn1.symc.36bd837a-d66d-47d1-8457-ffe9a9f3ddab&pf_rd_p=aff93425-4e25-4d86-babd-0fa9faf7ca5d&pf_rd_r=J5RJ2MBR7RZXHY3E2MF6&pd_rd_wg=LOnSt&pd_rd_r=6b3f1a33-5367-4730-bbf7-59cdf20179cd&ref_=pd_gw_ci_mcx_mr_hp_atf_m">shop</a></p>
+
+            </div>
+        </div>
+        <div class="box4-outer">
+
+
+
+            <div class="inner m1"  style="background-image: url('{% static '/images/box1_image.jpg'%}')">
+                <p>Clothing</p>
+            </div>
+
+            <div class="inner m2"  style="background-image: url('{% static '/images/box8_image.jpg'%}')">
+                <p>Womens cloths</p>
+            </div>
+            <div class="inner m3"  style="background-image: url('{% static '/images/box5_image.jpg'%}')">
+                <p>make up kits</p>
+            </div>
+            <div class="inner m4"  style="background-image: url('{% static '/images/box6_image.jpg'%}')">
+                <p>Fashion style</p>
+            </div>
+
+            <p><a href="#">See all offer</a></p>
+
+        </div>
+        <!--shop section 2-->
+        <div class="box4-outer">
+
+
+
+            <div class="inner m1" style="background-image: url('{% static '/images/footwear.jpg' %}')">
+                 
+                <p>Footwear</p>
+            </div>
+
+            <div class="inner m2" style="background-image: url('{% static '/images/watches.jpg' %}')">
+                <p>watches</p>
+            </div>
+            <div class="inner m3" style="background-image: url('{% static '/images/bags.jpg' %}')">    
+                <p>bags</p>
+            </div>
+            <div class="inner m4" style="background-image: url('{% static '/images/airpodes1.jpg' %}')">
+                <p>Ear buds</p>
+            </div>
+
+            <p><a href="#">See all offer</a></p>
+
+        </div>
+
+
+
+        <div class="box2 box" style="background-image: url('{% static '/images/ssd3.jpg'%}')">
+            <h2>SSD for all laptops</h2>
+            <div class="box2-image ">
+                <p><a href="#">shop</a></p>
+
+            </div>
+        </div>
+
+        <div class="box3 box " style="background-image: url('{% static '/images/headphone.jpg' %}')">
+
+            <h2>Head Phones</h2>
+            <div class="box3-image ">
+                <p><a href="https://www.amazon.in/Apple-iPhone-256GB-Deep-Purple/dp/B0BDK2FB2T/?_encoding=UTF8&pd_rd_w=KzOlH&content-id=amzn1.sym.aff93425-4e25-4d86-babd-0fa9faf7ca5d%3Aamzn1.symc.36bd837a-d66d-47d1-8457-ffe9a9f3ddab&pf_rd_p=aff93425-4e25-4d86-babd-0fa9faf7ca5d&pf_rd_r=J5RJ2MBR7RZXHY3E2MF6&pd_rd_wg=LOnSt&pd_rd_r=6b3f1a33-5367-4730-bbf7-59cdf20179cd&ref_=pd_gw_ci_mcx_mr_hp_atf_m">shop</a></p>
+
+            </div>
+        </div>
+        <div class="box1 box" style="background-image: url('{% static '/images/luggage.jpg'%}')">
+
+            <h2>Luggage Travel kits</h2>
+            <div class="box1-image ">
+                <p><a href="https://www.amazon.in/s?hidden-keywords=B0B3RRWSF6+%7C+B0B5B6PQCT+%7C+B0BF57RN3K+%7C+B0B6BLTGTT+%7C+B0B854R7NS+%7C+B0B5LVS732+%7C+B0BJ72WZQ7+%7C+B09NVPSCQT+%7C+B0B53QFZPY+%7C+B0B3RSDSZ3+%7C+B0B5DDJNH4+%7C+B0BP18W8TM+%7C+B0BF563HB4+%7C+B09V12K8NT+%7C+B09YV4MW2T+%7C+B0B5LW5DFQ+%7C+B0B6BPX5S9+%7C+B09YV42QHZ+%7C+B0B5LWP12T+%7C+B0BF4YBLPX+%7C+B0BRJF98R9+%7C+B0B53NXFFR+%7C+B09RK7XWQS+%7C+B0BBVKRP7B+%7C+B0BMM4MBT2&_encoding=UTF8&content-id=amzn1.sym.0e847605-5c53-4a3e-9dee-daed4c4621a9&pd_rd_r=6c3746b9-551f-4ab2-b9e4-f299357e187b&pd_rd_w=W1L9g&pd_rd_wg=VrsFT&pf_rd_p=0e847605-5c53-4a3e-9dee-daed4c4621a9&pf_rd_r=J5RJ2MBR7RZXHY3E2MF6&ref=pd_gw_unk">shop</a></p>
+            </div>
+            
+        
+
+        </div>
+        
+    </div>
+    
+    </div>
+    
+</body>
+<body>
+          <!-- shop section 3-->
+         <body>
+            <div class="k"><p>Blockbuster deals   <a href='#'>See more</a></p>
+                </div>
+            <div class=" long-box bo1">
+                
+                <div class="bo bo1" style= "background-image: url('{% static '/images/section3.jpg' %}')">
+                    <a href="#"><h2>Boat Ear..</h2> </a>
+                  <p></p>
+                  <h3> <i class="fa-solid fa-indian-rupee-sign"></i>1,500</h3>
+                  
+                </div>
+                <div class="bo bo1"style= "background-image:url('{% static '/images/section2.jpg' %}')">
+                    <a href="#"><h2>IQO Neo...</h2> </a>
+                    <p></p>
+                    <h3> <i class="fa-solid fa-indian-rupee-sign"></i>44,000</h3>   
+                </div>
+                <div class="bo bo1" style= "background-image: url('{% static '/images/mac.jpg' %}')">
+                    <a href="#"><h2>Macbook Air</h2> </a>
+                    <p></p>
+                    <h3> <i class="fa-solid fa-indian-rupee-sign"></i>1,06,000</h3>
+                </div>    
+                <div class="bo bo1"style= "background-image:url('{% static '/images/realme-10-pro-1.jpg' %}')">
+                    <a href="https://www.amazon.in/realme-Pro-Nebula-Blue-128/dp/B0BQ6RQ1DC/ref=sr_1_3?crid=1DIAN0G319301&keywords=realme+10+pro&qid=1691257652&sprefix=%2Caps%2C399&sr=8-3"><h2>realme-10pro</h2> </a>
+                    <p></p>
+                    <h3> <i class="fa-solid fa-indian-rupee-sign"></i>19,999</h3>
+                </div>
+                
+                <div class="bo bo1" style= "background-image:url('{% static '/images/Nothing-phone-2.jpg' %}')">
+                    
+                    <a href="#"><h2>Nothing-2</h2> </a>
+                    <p></p>
+                    <h3> <i class="fa-solid fa-indian-rupee-sign"></i>45,0000</h3>
+                </div>
+                <div class="bo bo1" style= "background-image:url('{% static '/images/section4.jpg' %}')">
+                    <a href="#"><h2>Grinder</h2> </a>
+                    <p></p>
+                    <h3> <i class="fa-solid fa-indian-rupee-sign"></i>3,000</h3>
+                </div>
+               
+            </div> 
+                
+                
+            
+            </div>
+            </body>
+
+<body>
+    <style>
+      .image{
+        width:100%;
+        height:400px;
+        background-size: cover;
+      }
+      .long-box{
+            width:100%;
+            height: 350px;
+            background-color: #808080;
+            justify-content: space-evenly;
+        }
+        .bo{
+            width: 200px;
+            height: 250px;
+            background-color: white;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 3px;
+            border: 2px solid aqua;
+            
+        }
+        .bo1{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 50px;
+            background-size : contain;
+            background-repeat: no-repeat;
+            
+        }
+        .k{
+            height: 30px;
+            width: 100%;
+            background-color: #808080;
+        
+            
+            
+        }
+        .k p {
+            font-style: Arial;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+        .k a {
+            font-size: 20px;
+            text-decoration: none;
+            margin-left: 10px;
+
+        }
+        .bos{
+            width: 200px;
+            height: 250px;
+            background-color: aliceblue;
+            background-size: cover;
+        }
+        .bo h2 {
+            margin-top: 300px;
+            font-size: 19px;
+            color:saddlebrown ;
+            
+        }
+        .bo h3 {
+            margin-top: 300px;
+            color: brown;
+        
+        }
+        .bo a {
+           text-decoration: none;
+        }
+        
+    .slider{
+        position: relative;
+        width: 100%;
+        height:600px;
+        margin: 10px;
+        background: #1D2128
+    }
+    .slider .slide{
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        
+        clip-path: circle(0% at 0 50%);
+    }
+    .slider .slide.active{
+     clip-path: circle(150% at 0 50%);
+     transition: 2s;
+     transition-property: clip-path;
+    }
+    .slider .slide img{
+      position: absolute;
+      width: 100%;
+      border-radius: 5px;
+      
+    }
+    .slider .slide .info{
+        position: absolute;
+        top: 0;
+      padding: 15px 30px;
+    }
+    .slider .slide .info h2{
+        color:blue;
+        font: size 45px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+    .slider .slide .info p{
+        color:blueviolet;
+        background: rgba(0,0,0,0.1);
+        font: size 16px;
+        width: 60%;
+        padding: 10px;
+        border-radius:4px;
+    }
+    .slider  .navigation {
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%);
+        
+    }
+    .slider .navigation .btn{
+        background: aqua;
+        width: 12px;
+        height:12px;
+        margin:10px;
+        border-radius:50%;
+        cursor: pointer;
+    }
+
+    @media (max-width:820px){
+        .slider{
+            width: 600px;
+            height: 375px;
+        }
+        .slider .slide .info{
+            padding: 10px 25px;
+        }
+        .slider .slide .info h2{
+            font-size:35px;
+        }
+        .slider .slide .info p{
+            width:70%;
+            font-size: 15px;
+        }
+        .slider .navigation{
+            bottom: 25px;
+        }
+    .slider .navigation .btn{
+        width: 10px;
+        height: 10px;
+        margin:8px;
+    }
+    }  
+
+    {% load static  %}
+* {
+    margin: 0;
+ 
+    font-family: Arial;
+  
+}
+.navbar{
+    height:60px;
+    background-color:black;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.navlogo {
+    height: 50px;
+    width: 100px;
+    
+}
+.logo {
+    background-image: url("{% static '/images/Amazon_logo.png '%}");
+
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    
+}
+.border{
+    border:2px solid  transparent;
+    
+}
+.border:hover{
+    
+    border: 1.5px solid white;
+   
+}
+
+.add-frist {
+    color: #cccccc;
+    font-size: 1rem;
+    display:flex;
+    margin-left:15px;
+   
+}
+.add-sec {
+    color:#FFFFFF;
+    font-size:14px;
+    
+}
+.add-icon {
+    display:flex;
+}
+.login-page h4 {
+    background-color: aqua;
+}
+.nav-search{
+    display:flex;
+    justify-content:space-evenly;
+    background-color:blue;
+    width:620px;
+    height:40px;
+    border-radius:3px;
+}
+.select-search{
+    color:#0F1111;
+    width:100px;
+    border-start-start-radius:3px;
+    border:none;
+    
+}
+.input-select{
+    width:500px;
+    border:none;
+    font-size:15px;
+}
+.add-search{
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#febd68;
+   
+    border-bottom-right-radius:4px;
+    border-top-right-radius:4px;
+    color:black;
+}
+.selecting-login {
+    display: flex;
+    color:white;
+    background-color:black;
+    border:none;
+}
+.login-page{
+    display:flex;
+}
+.login-page a {
+    text-decoration:none;
+    color:white;
+}
+.add-iconcart{
+    font-size:30px;
+}
+/* code for pannel*/
+.pannel{
+    height:40px;
+    background-color:#808080;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    font-family:Arial;
+    background-repeat:no-repeat;
+    
+  
+
+}
+.menu-icon{
+    font-size:15px;
+    margin-bottom:0.25rem;
+    display:flex;
+    margin-right:10px;
+}
+.setting{
+    font-size:20px;
+}  
+
+.pannel-options{
+    display:flex;
+    width:90%;
+    margin-right:70px;
+}
+.mini {
+    margin-right:5px;
+    
+}
+.say {
+    margin-right: 20px;
+}
+.best {
+    margin-right: 20px;
+}
+.deals {
+    margin-right: 20px;
+}
+.mobile {
+    margin-right: 20px;
+}
+.Customer {
+    margin-right: 20px;
+}
+.prim {
+    margin-right: 20px;
+}
+.electronic {
+    margin-right: 20px;
+}
+.pic {
+    background-image: url("{% static '/images/download link.jpg'%}");
+    height: 40Px;
+    width: 600px;
+    background-repeat: no-repeat;
+}
+.hero {
+    
+    height: 400px;
+    width: 1500px;
+    background-repeat: no-repeat;
+}
+.image-slider{
+    height:400px;
+    width:1300px;
+   
+    animation: changeimage 60s ease infinite normal;
+    transition-delay: 10s;
+    background-size:cover;
+    background-repeat:no-repeat;
+   
+}
+@keyframes changeimage{
+    0% {
+         
+    }
+    14% {
+        background-image: url("/index2/static/images/slider1.jpg");
+        ;
+    }
+    28% {
+        background-image: url("/index2/static/images/slider2.jpg");
+    }
+    42% {
+        background-image: url("/index2/static/images/slider3.jpg");
+    }
+    56% {
+        background-image: url("/index2/static/images/slider4.jpg");
+    }
+    70% {
+        background-image: url("/index2/static/images/slidr5.jpg");
+    }
+    84% {
+        background-image: url("/index2/static/images/slider6.jpg");
+    }
+    100% {
+        background-image: url("/index2/static/images/hero_image.jpg");
+    }
+
+}
+.box{
+    width:23%;
+    height:350px;
+    display:flex;
+    background-color:white;
+    
+    margin-top:25px;
+    padding:20px 0px 15px;
+    border:none;
+    background-size:cover;
+
+}
+.shop{
+    display:flex;
+    flex-wrap:wrap;
+    
+    justify-content:space-evenly;
+    background-color:#808080;
+    border:none;
+   
+}
+
+.box1 {
+    /*background-image: url("{% static 'index2/images/smart.jpg' %}");*/
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.box1-image p{
+    position:relative;
+    margin-left:-290px;
+    margin-top:300px;
+}
+.box1-image a {
+    text-decoration: none;
+}
+.box2 {
+    background-image: url('{% static "/images/laptop.jpg" %}');
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.box2-image p {
+    position: relative;
+    margin-left: -140px;
+    margin-top: 300px;
+}
+.box2-image a {
+    text-decoration: none;
+}
+.box3 {
+    background-image: url("assets/images/iphone.jpg");
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+.box3-image p {
+    position: relative;
+    margin-left: -120px;
+    margin-top: 300px;
+    height:100px;
+}
+.box3-image a {
+    text-decoration: none;
+}
+.box4-outer {
+    width: 23%;
+    height: 390px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top:20px;
+.inner{
+    width: 45%;
+    height: 45%;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px
+}
+
+.m1 {
+    background-image: url("assets/images/box1_image.jpg");
+    background-size: cover;
+}
+
+.m2 {
+    background-image: url("assets/images/box8_image.jpg");
+    background-size: cover;
+}
+
+
+.m3 {
+    background-image: url("assets/images/box5_image.jpg");
+    background-size: cover;
+}
+.m4 {
+    background-image: url("assets/images/box6_image.jpg");
+    background-size: cover;
+}
+
+.
+.box4-outer p {
+    position: relative;
+    margin-left: -290px;
+    margin-top: 300px;
+}
+.box4-outer a {
+    text-decoration:none;
+}
+/*shoe section*/
+.shoe{
+    display:flex;
+    flex-wrap:wrap;
+}
+.sec {
+    width: 23%;
+    height: 350px;
+    display: flex;
+    background-color: white;
+    margin-top: 25px;
+    padding: 20px 0px 15px;
+    border: none;
+    background-size: cover;
+}
+/* Style the box container */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.long-box {
+    width: 200px; /* Adjust the width as desired */
+    height: 400px; /* Adjust the height as desired */
+    background-color: #f0f0f0; /* Change the background color */
+    border: 2px solid #ccc; /* Add a border */
+    margin: 50px auto; /* Center the box on the page */
+}
+    </style>
+    
+</html>
